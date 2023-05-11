@@ -1,0 +1,203 @@
+body {
+    text-align: center;
+    background-color: #283149;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: #DBEDF3;
+    font-family: "Arvo", cursive;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-family: "Arvo", cursive;
+  }
+  h3{
+    font-size: 2rem;
+    font-family: "Arvo", cursive;
+  }
+  h4{
+    font-size: 1.2rem;
+    font-family: "Arvo", cursive;
+  }
+  .ques{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+
+/* login page */
+/* .lgn-leader{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: large;
+} */
+.log-form{
+  background-color: lightblue;
+  width: 45%;
+  margin: 0 auto;
+  padding: 20px;
+}
+#username,#password{
+  margin: 20px;
+  background-color: #f1f1f1;
+  border: 1px solid gray;
+  border-radius: 100px;
+  width: 55%;
+  height: 50px;
+  font-size: large;
+  padding-left: 20px;
+}
+#password{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.loginBtn{
+  background-color: rgb(201, 69, 69);
+  margin-bottom: 35px;
+  padding: 15px 30px;
+  border: 1px solid gray;
+  border-radius: 100px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+.loginBtn:hover{
+  cursor: pointer;
+  background-color: rgb(221, 25, 25);
+}
+
+/* instructions page */
+.instructions{
+  color: pink;
+  font-weight: bold;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+}
+.instructions li{
+  margin: 5px;
+}
+.startBtn{
+  margin: 30px;
+  width: 30%;
+  height: 40px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.startBtn:hover{
+  background-color: yellow;
+}
+
+/* q */
+.ansBox{
+  margin: 40px 40px 10px 40px;
+  background-color: rgb(116, 241, 104);
+  /* background-color: rgb(252, 66, 66); */
+  border: 1px solid black;
+  border-radius: 100px;
+  width: 20%;
+  height: 50px;
+  font-size: larger;
+  padding-left: 20px;
+  /* color: white; */
+  color: black;
+}
+.ansBox::placeholder{
+  /* color: rgb(222, 211, 211); */
+  color: rgb(95, 92, 92);
+}
+.submitBtn{
+  margin: 5px;
+  width: 15%;
+  height: 40px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.submitBtn:hover{
+  background-color: yellow;
+}
+.incorrectMsg{
+  font-size: larger;
+  color: rgb(241, 104, 104);
+}
+.clue{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  width: 125px;
+  font-size: large;
+  background-color: rgb(252, 66, 66);
+  border: 1px solid black;
+  border-radius: 100px;
+  color: white;
+}
+.clue:hover{
+  cursor: pointer;
+}
+.clueMsg{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  color: white;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  visibility: hidden;
+}
+
+
+/* q2 */
+.paths{
+  color: white;
+  font-size: large;
+  margin: 0px 10px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pathSelect{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* q3 */
+.lq3-image{
+  height: 50px;
+}
+.tr,.br{
+  display: none;
+}
+.trDiv{
+  position: absolute;
+  top: 5px;right: 10px;
+}
+.brDiv{
+  position: absolute;
+  bottom: 10px;right: 10px;
+}
+.trDiv:hover+.tr{
+  color: white;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: large;
+  display: block;
+}
+.brDiv:hover+.br{
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: large;
+  display: block;
+}
+
+/* admin */
+.tableauPlaceholder{
+  margin: 0 auto;
+}

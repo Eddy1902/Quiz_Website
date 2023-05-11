@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>SSTest</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/sstestIcon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <h2 style="color: white;">You have completed the puzzle</h2>
+    <div class="ques">
+      <h3>Your Result</h3>
+      <h4>Time taken : <%= time %> seconds</h4>
+      <h4>Wrong answers : <%= attempts %></h4>
+  </div>
+  <form action="/end" method="get">
+    <button type="submit" class="submitBtn">LOG OUT</button>
+  </form>
+</body>
+</html>

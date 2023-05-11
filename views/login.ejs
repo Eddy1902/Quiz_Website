@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SSTest</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/sstestIcon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- <a href="/leaderboard" class="lgn-leader">View Leaderboard</a> -->
+
+  <h1 id="title">Soft Skills Test</h1>
+  <div class="log-form">
+    <h2>Enter your credentials</h2>
+    <form action="/login" method="post">
+      <input type="email" name="username" id="username" placeholder="Enter email" required><br>
+      <input type="password" name="password" id="password" placeholder="Enter password" required><br>
+      <input type="checkbox" name="admin" id="admin">Login as Admin
+      <p style="color:red"><%= loggedMessage %></p>
+      <button type="submit" class="loginBtn">Enter</button>
+    </form>
+  </div>
+</body>
+
+</html>

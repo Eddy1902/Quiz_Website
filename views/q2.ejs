@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>SSTest</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/sstestIcon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <button class="clue">Get Clue</button>
+    <h2 style="color: white;">Task 2</h2>
+    <div class="ques">
+        <h3>Guess this Akshay Kumar's movie</h3>
+        <h4><a href="https://www.youtube.com/watch?v=rDhYFx-Lqxg" target="_blank">https://www.youtube.com/watch?v=rDhYFx-Lqxg</a></h4>
+    </div>
+    <form action="/task2" method="post">
+        <input type="text" name="q2_ans" id="q2-ans" class="ansBox" placeholder="Enter your answer" autocomplete="off" required><br>
+        <p class="incorrectMsg"><%= msg %></p>
+        <input type="hidden" name="username" value="<%= username %>">
+        <div class="pathSelect">
+            <button type="submit" name="path" value="left" class="submitBtn">Go to Left</button>
+            <p class="paths">There are two paths ahead to reach treasure. Choose One</p>
+            <button type="submit" name="path" value="right" class="submitBtn">Go to Right</button>
+        </div>
+    </form>
+    <p class="clueMsg">CLUE : Leader of a gang</p>
+
+    <script src="../js/q.js"></script>
+</body>
+</html>

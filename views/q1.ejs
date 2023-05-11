@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>SSTest</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/sstestIcon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <button class="clue">Get Clue</button>
+    <h2 style="color: white;">Task 1</h2>
+    <div class="ques">
+      <h3>Guess the jumbled word</h3>
+      <h4>We all are grown by seeing it : O O O D B L Y W L</h4>
+    </div>
+    <form action="/task1" method="post">
+      <input type="text" name="q1_ans" id="q1-ans" class="ansBox" placeholder="Enter your answer" autocomplete="off" required><br>
+      <p class="incorrectMsg"><%= msg %></p>
+      <button type="submit" class="submitBtn" name="username" value="<%= username %>">Next Task</button>
+    </form>
+    <p class="clueMsg">CLUE : Hindi cinema</p>
+
+    <script src="../js/q.js"></script>
+</body>
+</html>

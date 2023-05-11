@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <title>SSTest</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/sstestIcon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+<body>
+    <button class="clue">Get Clue</button>
+    <h2 style="color: white;">Task 3</h2>
+    <div class="ques">
+        <h3>Guess the actor's first name</h3>
+        <img src="../images/lq3.png" alt="This is an image" class="lq3-image">
+    </div>
+    <form action="/left/task3" method="post">
+        <input type="text" name="lq3_ans" id="lq3-ans" class="ansBox" placeholder="Enter your answer" autocomplete="off" required><br>
+        <p class="incorrectMsg"><%= msg %></p>
+        <button type="submit" class="submitBtn" name="username" value="<%= username %>">Next Task</button>
+    </form>
+    <p class="clueMsg">CLUE : There are two famous Bollywood actors with same first name.</p>
+
+    <script src="../js/q.js"></script>
+</body>
+</html>
