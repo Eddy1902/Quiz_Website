@@ -4,7 +4,7 @@ const bodyParser=require('body-parser')
 const mysql=require('mysql')
 require('dotenv').config()
 
-const PORT=3000
+const PORT=process.env.PORT||3000
 
 const connection=mysql.createConnection({
     host: process.env.HOST,

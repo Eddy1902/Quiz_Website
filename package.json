@@ -4,7 +4,8 @@
   "description": "This is a puzzle to test soft skills.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Akshay Aggarwal",
   "license": "ISC",
