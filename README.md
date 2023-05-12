@@ -42,7 +42,7 @@ player.<br>
 
 
 
-# features implemented
+# Features Implemented
 -Anyone with an email address can create an Id and password to participate in the game.<br>
 -The puzzle contains 5 clues, 1 dead-end and only 1 solution.<br>
 -User data is stored for every user.<br>
