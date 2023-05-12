@@ -43,7 +43,7 @@ player.
 
 
 # features implemented
--Anyone with an email address can create an Id and password to participate in the game
+-Anyone with an email address can create an Id and password to participate in the game.
 -The puzzle contains 5 clues, 1 dead-end and only 1 solution.
 -User data is stored for every user.
 -If a user lefts a puzzle in between and comes back again to play, he has to start over.
