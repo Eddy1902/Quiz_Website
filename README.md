@@ -34,6 +34,10 @@ There are two parameters on which a player is scored - Total time taken to solve
 player.<br>
 -The correct path is also given as a hint in the corresponding task and is a perfect measure to check the attention to detail of the player.
 
+### ways to solve puzzle
+-The only problem one might get is on task 3 where TR means Top Right.
+-All other tasks are just straight forward.
+
 ### checking result
 -After a user has completed the puzzle, his score will be calculated and shown to him.
 
