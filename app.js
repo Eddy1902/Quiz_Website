@@ -52,7 +52,15 @@ app.post("/login",function(req,res){
             }else{
                 const user=result[0];
                 if(user.password===password){
-                    res.render("end",{time:user.time,attempts:user.attempts})
+                    if(!user.time){
+                        const sql="UPDATE users SET attempts='"+0+"' WHERE username='"+username+"'";
+                        connection.query(sql,function(err,result){
+                            if(err) throw err;
+                        })
+                        res.render("instructions",{username:username})
+                    }else{
+                        res.render("end",{time:user.time,attempts:user.attempts})
+                    }
                 }else{
                     res.render("login",{loggedMessage:"Incorrect password"})
                 }
